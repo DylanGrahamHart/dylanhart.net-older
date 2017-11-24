@@ -1,0 +1,76 @@
+#text-gradient-widget .for-fun-item {
+	position: relative;
+	height: 50px;
+
+	div {
+		font-size: 50px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 1px;
+		overflow: hidden;
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+		}		
+
+		@for $i from 1 through 50 {
+			$offset: $i * 1 - 1;
+			$g: 255 - 5 * $i;
+			
+			&:nth-child(#{$i}) {
+				top: $offset + px;
+
+				span {
+					top: (-1 * $offset) + px;
+
+					-webkit-animation: merp-#{$i} 4s linear infinite;
+					animation: merp-#{$i} 4s linear infinite;
+
+					@-webkit-keyframes merp-#{$i} {
+						0% {
+							color: rgb(0, $g, 0);
+						}
+						25% {
+							color: rgb(255, $g, 0);
+						}
+						50% {
+							color: rgb(255, $g, 255);
+						}
+						75% {
+							color: rgb(0, $g, 255);
+						}
+						100% {
+							color: rgb(0, $g, 0);
+						}
+					}					
+					@keyframes merp-#{$i} {
+						0% {
+							color: rgb(0, $g, 0);
+						}
+						25% {
+							color: rgb(255, $g, 0);
+						}
+						50% {
+							color: rgb(255, $g, 255);
+						}
+						75% {
+							color: rgb(0, $g, 255);
+						}
+						100% {
+							color: rgb(0, $g, 0);
+						}
+					}				
+				}
+
+			}
+		}
+		
+	}
+
+
+
+}

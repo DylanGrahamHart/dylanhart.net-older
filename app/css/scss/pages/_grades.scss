@@ -1,0 +1,25 @@
+#view-grades {
+
+	h1 {
+		margin-bottom: 20px;
+	}
+
+	video {
+		width: 100%;
+		margin: 0 auto 40px auto;
+		display: block;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		color: $green;
+	}
+
+	figure {
+		text-align: center;
+		border: 1px solid #000;
+	}
+
+}

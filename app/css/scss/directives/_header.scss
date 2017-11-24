@@ -1,0 +1,152 @@
+#header {
+	position: relative;
+	background: #222;
+
+	h1 {
+		float: left;
+
+		a {
+			color: #fff;
+			font-size: 20px;
+			font-weight: normal;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 20px;
+			display: inline-block;
+			letter-spacing: .1em;
+
+			@include transition();
+
+			&:active {
+				color: $green;
+			}				
+
+			@media (min-width: $medium) {
+				font-size: 24px;
+			}
+
+			@media (min-width: $large) {
+				&:hover {
+					color: $green;
+				}			
+			}			
+		}
+	}
+
+	#menu-button {
+		display: block;
+		box-sizing: content-box;
+		float: right;
+		padding: 20px;
+		width: 30px;
+		cursor: pointer;
+
+		@media (min-width: $large) {
+			display: none;
+		}
+
+		span {
+			display: block;
+			height: 3px;
+			background: #fff;
+			margin-bottom: 5px;
+
+			@include transition(.25s);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&.active {
+			margin-top: 4px;
+
+			span {
+				background: $green;
+				position: relative;
+
+				&:first-child {
+					top: 4px;
+
+					-webkit-transform: rotate(45deg);					
+					transform: rotate(45deg);
+				}
+				&:nth-child(2) {
+					display: none;
+				}
+				&:last-child {
+					top: -4px;
+
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}							
+			}
+		}		
+	}
+
+	#menu {
+		position: absolute;
+		z-index: 9;
+		top: 100%;
+		opacity: 0;
+		visibility: hidden;
+
+		left: 0;
+		right: 0;
+
+		@include transition(.5s);		
+
+		&.active {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		@media (min-width: $large) {
+			float: right;
+			position: static;
+			opacity: 1;
+			visibility: visible;			
+		}		
+
+		li {
+			display: block;
+
+			@media (min-width: $large) {
+				float: left;
+			}
+
+			a {
+				line-height: 24px;
+				color: #fff;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 20px;
+				letter-spacing: .1em;
+
+				display: block;
+				background: #222;
+				text-align: center;
+
+				border-top: 1px solid #aaa;
+
+				@include transition();
+
+				&:hover {
+					color: $green;
+					background: #444;
+				}
+
+				@media (min-width: $large) {
+					display: inline-block;
+					border: none;
+
+					&:hover {
+						border-radius: 50%;
+					}					
+				}				
+			}
+
+		}
+	}
+
+}

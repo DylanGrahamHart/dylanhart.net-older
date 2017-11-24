@@ -1,0 +1,359 @@
+/**
+ * Global
+ */
+.row {
+  max-width: 1320px;
+  margin: 0 auto; }
+
+.row:after, .clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.column {
+  float: left; }
+
+/**
+ * Small
+ */
+.small-1 {
+  width: 8.33333%; }
+
+.small-2 {
+  width: 16.66667%; }
+
+.small-3 {
+  width: 25%; }
+
+.small-4 {
+  width: 33.33333%; }
+
+.small-5 {
+  width: 41.66667%; }
+
+.small-6 {
+  width: 50%; }
+
+.small-7 {
+  width: 58.33333%; }
+
+.small-8 {
+  width: 66.66667%; }
+
+.small-9 {
+  width: 75%; }
+
+.small-10 {
+  width: 83.33333%; }
+
+.small-11 {
+  width: 91.66667%; }
+
+.small-12 {
+  width: 100%; }
+
+/**
+ * Medium
+ */
+@media (min-width: 641px) {
+  .medium-1 {
+    width: 8.33333%; }
+  .medium-2 {
+    width: 16.66667%; }
+  .medium-3 {
+    width: 25%; }
+  .medium-4 {
+    width: 33.33333%; }
+  .medium-5 {
+    width: 41.66667%; }
+  .medium-6 {
+    width: 50%; }
+  .medium-7 {
+    width: 58.33333%; }
+  .medium-8 {
+    width: 66.66667%; }
+  .medium-9 {
+    width: 75%; }
+  .medium-10 {
+    width: 83.33333%; }
+  .medium-11 {
+    width: 91.66667%; }
+  .medium-12 {
+    width: 100%; } }
+
+/**
+ * Large
+ */
+@media (min-width: 1025px) {
+  .large-1 {
+    width: 8.33333%; }
+  .large-2 {
+    width: 16.66667%; }
+  .large-3 {
+    width: 25%; }
+  .large-4 {
+    width: 33.33333%; }
+  .large-5 {
+    width: 41.66667%; }
+  .large-6 {
+    width: 50%; }
+  .large-7 {
+    width: 58.33333%; }
+  .large-8 {
+    width: 66.66667%; }
+  .large-9 {
+    width: 75%; }
+  .large-10 {
+    width: 83.33333%; }
+  .large-11 {
+    width: 91.66667%; }
+  .large-12 {
+    width: 100%; } }
+
+/**
+ * Colors
+ */
+/**
+ * Elements
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  line-height: 1;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #fff; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%; }
+
+/**
+ * Mixins
+ */
+#header {
+  box-shadow: 0 0 6px #aaa; }
+  #header .row {
+    position: relative;
+    padding-left: 110px;
+    height: 96px; }
+  #header #logo {
+    display: block;
+    float: left;
+    margin-right: 70px;
+    line-height: 96px; }
+  #header #menu {
+    float: left;
+    line-height: 96px; }
+    #header #menu li {
+      float: left;
+      display: block;
+      margin-right: 18px;
+      position: relative; }
+      #header #menu li:after {
+        content: '\2022';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -18px;
+        width: 18px;
+        text-align: center;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%); }
+      #header #menu li:last-child {
+        margin-right: 0; }
+        #header #menu li:last-child::after {
+          display: none; }
+      #header #menu li.active, #header #menu li:hover {
+        background: url(../imgs/header/arrow.jpg) no-repeat;
+        background-position: center bottom; }
+        #header #menu li.active a, #header #menu li:hover a {
+          color: #33a614; }
+      #header #menu li a {
+        display: block;
+        font-weight: bold;
+        color: #5e5554;
+        font-size: 14px; }
+  #header #util-menu {
+    float: right;
+    padding-top: 32px; }
+    #header #util-menu li {
+      float: left;
+      display: block;
+      margin-right: 2px; }
+      #header #util-menu li:first-child a {
+        background: #ee7952;
+        background: -webkit-linear-gradient(#ee7952, #e16c47);
+        background: -o-linear-gradient(#ee7952, #e16c47);
+        background: -moz-linear-gradient(#ee7952, #e16c47);
+        background: linear-gradient(#ee7952, #e16c47); }
+      #header #util-menu li:last-child {
+        margin-right: 0; }
+      #header #util-menu li a {
+        display: inline-block;
+        padding: 8px 10px;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.6);
+        background: #49bf2b;
+        background: -webkit-linear-gradient(#49bf2b, #36aa18);
+        background: -o-linear-gradient(#49bf2b, #36aa18);
+        background: -moz-linear-gradient(#49bf2b, #36aa18);
+        background: linear-gradient(#49bf2b, #36aa18); }
+
+#footer {
+  height: 128px;
+  line-height: 128px;
+  background: url(../imgs/footer/bg.jpg);
+  background-position: center top; }
+  #footer .logo {
+    margin-left: 230px;
+    margin-right: 130px; }
+  #footer a {
+    display: inline-block;
+    margin-right: 25px; }
+
+#block-1 {
+  padding-bottom: 30px; }
+  #block-1 h1 {
+    padding-top: 70px;
+    margin-bottom: 80px;
+    color: #453b3a;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300; }
+    #block-1 h1 strong {
+      font-weight: normal;
+      font-style: italic; }
+  #block-1 figure {
+    text-align: center;
+    margin-bottom: 30px; }
+  #block-1 .start-now {
+    text-align: center; }
+    #block-1 .start-now a {
+      line-height: 78px;
+      padding-bottom: 2px;
+      width: 400px;
+      display: inline-block;
+      color: #fff;
+      font-size: 39px;
+      font-weight: 300;
+      border: 1px solid #e05d2f;
+      border-radius: 4px;
+      text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+      background: #fb7345;
+      background: -webkit-linear-gradient(#fb7345, #e05d2f);
+      background: -o-linear-gradient(#fb7345, #e05d2f);
+      background: -moz-linear-gradient(#fb7345, #e05d2f);
+      background: linear-gradient(#fb7345, #e05d2f); }
+      #block-1 .start-now a span {
+        position: relative;
+        padding-left: 10px; }
+        #block-1 .start-now a span:before {
+          position: absolute;
+          content: url(../imgs/right-arrow.png);
+          right: 100%;
+          transform: translate(-10px, 2px);
+          -webkit-transform: translate(-10px, 2px); }
+
+#block-2 {
+  background: url(../imgs/how-it-works/bg.jpg);
+  background-position: center top;
+  box-shadow: 0 0 6px #aaa;
+  padding-bottom: 60px; }
+  #block-2 h2 {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #453b3a;
+    font-size: 55px;
+    font-weight: 300; }
+  #block-2 li {
+    padding: 0 35px;
+    text-align: center; }
+  #block-2 figure {
+    width: 214px;
+    max-width: 100%;
+    padding: 50% 0;
+    margin: 0 auto 20px;
+    padding: 107px;
+    background: url(../imgs/how-it-works/circle-shadow.png);
+    position: relative; }
+    #block-2 figure img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%); }
+  #block-2 .number {
+    font-size: 42px;
+    color: #a7a2a2;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d1cece; }
+  #block-2 .text {
+    color: #453b3a; }
+    #block-2 .text .big {
+      font-size: 46px;
+      font-weight: 300;
+      margin-bottom: 30px; }
+    #block-2 .text .small {
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 500; }
+
+#block-3 {
+  color: #bba9a6;
+  text-align: center; }
+  #block-3 h3 {
+    font-size: 79px;
+    font-weight: 300;
+    padding: 90px 0 70px 0; }
+  #block-3 .text {
+    padding: 0 110px;
+    margin-bottom: 40px; }
+  #block-3 p {
+    font-size: 22px;
+    line-height: 29px; }
+    #block-3 p:first-child {
+      padding-right: 30px; }
+    #block-3 p:last-child {
+      padding-left: 30px; }
+  #block-3 .cta {
+    text-align: right;
+    margin-bottom: 40px; }
+    #block-3 .cta a {
+      display: inline-block;
+      width: 130px;
+      line-height: 48px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      border: 1px solid #e05d2f;
+      border-radius: 4px;
+      text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+      background: #fb7345;
+      background: -webkit-linear-gradient(#fb7345, #e05d2f);
+      background: -o-linear-gradient(#fb7345, #e05d2f);
+      background: -moz-linear-gradient(#fb7345, #e05d2f);
+      background: linear-gradient(#fb7345, #e05d2f); }
+      #block-3 .cta a img {
+        margin-right: 10px;
+        width: 12px; }
+
+/*# sourceMappingURL=app.css.map */

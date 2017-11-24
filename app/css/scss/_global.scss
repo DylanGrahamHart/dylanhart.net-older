@@ -1,0 +1,85 @@
+/**
+ * Variables
+ */
+$medium: 641px;
+$large: 1025px;
+
+// Colors
+$green: rgb(0, 200, 0);
+$blueLink: #1a0dab;
+
+// Adobe colors
+$offGreen: #468966;
+$yellow: #FFF0A5;
+
+$orange: #FFB03B;
+$orangeBlue: #066AB2;
+$orangeLightBlue: #3BACFF;
+
+$red: #B64926;
+$darkRed: #8E2800;
+
+
+/**
+ * Elements
+ */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	line-height: 1;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background: #fff;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+
+/**
+ * Classes
+ */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+
+/**
+ * Mixins
+ */
+@mixin transition($duration: 1s) {
+	-webkit-transition: $duration;
+	transition: $duration;
+}
+
+
+/**
+ * App
+ */
+#main {
+	.row {
+		padding: 20px 30px;
+	}
+
+	h1 {
+		margin: 0 0 80px;
+		color: #aaa;
+		font-size: 36px;
+		text-transform: capitalize;
+	}
+}

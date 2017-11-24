@@ -1,0 +1,47 @@
+/**
+ * Colors
+ */
+$menuGreen: #33a614;
+$brown: #453b3a;
+
+
+/**
+ * Elements
+ */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1;
+	font-size: 16px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: #fff;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+
+/**
+ * Mixins
+ */
+@mixin gradient($top, $bottom) {
+	background: $top;
+
+    background: -webkit-linear-gradient($top, $bottom);
+    background: -o-linear-gradient($top, $bottom);
+    background: -moz-linear-gradient($top, $bottom);
+
+    background: linear-gradient($top, $bottom);	
+}

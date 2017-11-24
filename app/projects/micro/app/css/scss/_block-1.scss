@@ -1,0 +1,59 @@
+#block-1 {
+	padding-bottom: 30px;
+
+	h1 {
+		padding-top: 70px;
+		margin-bottom: 80px;
+		color: $brown;
+		text-align: center;
+		font-size: 48px;
+		font-weight: 300;
+
+		strong {
+			font-weight: normal;
+			font-style: italic;
+		}
+
+	}
+
+	figure {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.start-now {
+		text-align: center;
+
+		a {
+			line-height: 78px;
+			padding-bottom: 2px;
+			width: 400px;
+			display: inline-block;
+			color: #fff;
+			font-size: 39px;
+			font-weight: 300;
+			border: 1px solid #e05d2f;
+			border-radius: 4px;
+
+			text-shadow: -1px 1px 2px rgba(0, 0, 0, .8);
+
+			@include gradient(#fb7345, #e05d2f);
+
+			span {
+				position: relative;
+				padding-left: 10px;
+
+				&:before {
+					position: absolute;
+					content: url(../imgs/right-arrow.png);
+					right: 100%;
+
+					transform: translate(-10px, 2px);
+					-webkit-transform: translate(-10px, 2px);
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,28 @@
+<div id="view-portfolio">
+	<div class="row">
+		<h1>Portfolio</h1>
+
+		<label for="company-filter">
+			<p>Filter by company</p>
+
+			<select id="company-filter" ng-model="company" ng-init="company='all'" ng-change="toggleCompany()">
+				<option value="cinsay">Cinsay</option>
+				<option value="eyemagine">Eyemagine</option>
+				<option value="edgeworks">Edgeworks</option>
+				<option value="freelance">Freelance</option>
+				<option value="all">-- Show All --</option>
+			</select>
+		</label>
+
+		<div ng-repeat="company in companies" ng-include="company"></div>
+
+		<div id="screenshots-modal">
+			<div class="inner">
+				<figure></figure>
+				<a href="#" class="control prev" ng-click="slide('prev')"></a>
+				<a href="#" class="control next" ng-click="slide('next')"></a>
+			</div>
+			<a href="#" class="close" ng-click="closeModal()"></a>
+		</div>
+	</div>
+</div>

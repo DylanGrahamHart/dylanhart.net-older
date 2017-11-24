@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="dylanHart">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Dylan Hart</title>
+	<base href="/">
+
+	<link rel="icon" href="app/imgs/global/favicon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100,400italic,900">
+	<link rel="stylesheet" href="app/css/app.css">
+</head>
+
+
+<body id="page-{{ pageHandle }}" ng-cloak>
+
+	<site-header></site-header>
+
+	<div id="main">
+		<div ng-view></div>
+	</div>
+
+	<script src="app/js/app.js"></script>
+</body>
+</html>

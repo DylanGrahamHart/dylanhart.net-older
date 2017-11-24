@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.git-old/
+
+
+app/js/app.js
+app/css/app.css
+

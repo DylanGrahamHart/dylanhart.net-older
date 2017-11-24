@@ -1,0 +1,36 @@
+#view-for-fun {
+	padding-bottom: 600px;
+
+	.widget {
+		max-width: 640px;
+		margin: 0 auto;
+	}
+
+	.label {
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		font-size: 30px;
+		border-bottom: 1px solid #aaa;
+
+		span {
+			font-weight: normal;
+			margin-right: 20px;
+		}
+
+		a {
+			font-size: 15px;
+			color: #00e;
+			vertical-align: middle;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.for-fun-item {
+		margin-bottom: 60px;
+	}
+
+
+}

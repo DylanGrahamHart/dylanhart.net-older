@@ -1,0 +1,57 @@
+/**
+ * Elements
+ */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+body {
+	background: #000;
+}
+
+/**
+ * App
+ */
+#app-wrap {
+	padding: 30px 10px 10px;
+	min-height: 480px;
+}
+#main-input {
+    width: 270px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 30px auto;
+    padding: 0 10px;
+    background: #fff;
+    font-size: 20px;
+    overflow: scroll;
+    white-space: nowrap;
+}
+#buttons .row {
+    text-align: center;
+    margin-bottom: 12px;
+}
+#buttons button {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+
+    border: none;
+    border-radius: 10px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom: 2px solid #333;
+
+	background: #666;
+	background: -webkit-linear-gradient(top, #666 0%, #444 100%);
+}
+#buttons #delete,
+#buttons #clear,
+#buttons #equals {
+    width: 130px;
+}
