@@ -9,6 +9,7 @@ app.controller('portfolioCtrl', ['$scope', '$rootScope', function($scope, $rootS
 
 	$scope.companies = [
 		'app/html/pages/home/home-depot.html',
+		'app/html/pages/home/general-motors.html',
 		'app/html/pages/home/cinsay.html',
 		'app/html/pages/home/eyemagine.html',
 		'app/html/pages/home/edgeworks.html',
