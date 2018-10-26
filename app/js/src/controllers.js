@@ -8,6 +8,7 @@ app.controller('portfolioCtrl', ['$scope', '$rootScope', function($scope, $rootS
 	$rootScope.pageHandle = 'portfolio';
 
 	$scope.companies = [
+		'app/html/pages/home/home-depot.html',
 		'app/html/pages/home/cinsay.html',
 		'app/html/pages/home/eyemagine.html',
 		'app/html/pages/home/edgeworks.html',
