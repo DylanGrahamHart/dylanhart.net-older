@@ -2,6 +2,7 @@
 node_modules/
 .gitignore
 gulpfile.js
+package.json
 .DS_Store
 .ignore
 app/projects/cinsay-player/player-plugin.tar
